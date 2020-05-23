@@ -1,5 +1,52 @@
 <app-header titulo="Peliculas y Series"></app-header>
 
+
+<ion-toolbar color="light" >
+
+    <ion-segment  (ionChange)="segmentChanged($event)"
+                  >
+  
+      <ion-segment-button value="todos" >
+        <ion-label color="danger" >Todos</ion-label>
+      </ion-segment-button>
+  
+      <ion-segment-button value="Pelicula">
+        <ion-label color="tertiary" >Pelicula</ion-label>
+      </ion-segment-button>
+  
+      <ion-segment-button value="Serie">
+        <ion-label color="success" >Serie</ion-label>
+      </ion-segment-button>
+  
+    </ion-segment>
+  
+  </ion-toolbar>
+
+
 <ion-content>
+
+    <ion-list>
+
+        <ion-item *ngFor ="let peliser of (peliSeries | async) | filtro: classification: 'classification'">
+          
+           <!-- <ion-chip>-->
+            <ion-avatar slot="start">
+                <img src='{{peliser.imagen}}'>
+            </ion-avatar> 
+            
+            <ion-label>
+                <h3>{{ peliser.name }} </h3>                        
+               </ion-label>
+            <!--</ion-chip>  -->
+           
+        
+            <ion-label>
+              <p align="right"> {{peliser.year}}, {{peliser.type}}  {{peliser.temp}}  </p>  
+            </ion-label>
+        
+        </ion-item>
+      
+      </ion-list>   
+
 
 </ion-content>

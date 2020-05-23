@@ -8,6 +8,8 @@ import { PeliculasyseriesPageRoutingModule } from './peliculasyseries-routing.mo
 
 import { PeliculasyseriesPage } from './peliculasyseries.page';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
+import { FiltroPipe } from 'src/app/pipes/filtro.pipe';
+import { PipesModule } from 'src/app/pipes/pipes.module';
 
 @NgModule({
   imports: [
@@ -15,7 +17,8 @@ import { ComponentesModule } from 'src/app/componentes/componentes.module';
     FormsModule,
     IonicModule,
     PeliculasyseriesPageRoutingModule,
-    ComponentesModule
+    ComponentesModule,
+    PipesModule
   ],
   declarations: [PeliculasyseriesPage]
 })
