@@ -78,11 +78,6 @@ Para que funcione de forma correcta la seccion del Login debes ingresar los sigu
 
 ![image](https://user-images.githubusercontent.com/15019106/82767615-85c0be00-9dee-11ea-829f-0e239a4c43a8.png)
 
-
-Y hacer las siguientes modificaciones en el file *package.json* en la seccion 'dependencies'
-
-    - dependencies:["@angular/fire":"5.4.2","firebase": "5.4.2"]
-
 Y por ultimo revisar que existan estas librerias en *app.module.ts*
 
     -   import { AngularFireAuthModule } from '@angular/fire/auth';
