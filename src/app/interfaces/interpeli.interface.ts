@@ -1,11 +1,11 @@
 export interface Ipelis
 {
     Title: string;
-    Genero: string;
-    Raiting: string;
-    Año: string;
+    Genre?: string;
+    ImdbRating: string;
+    Year: string;
     Director: string;
-    Actores: string;
+    Actors: string;
     Poster: string;
     Type: string;
 }

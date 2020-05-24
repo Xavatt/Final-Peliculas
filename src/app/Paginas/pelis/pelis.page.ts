@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Ipelis } from '../../../interfaces/interpeli.interface';
+import { Ipelis } from '../../interfaces/interpeli.interface';
 import { Observable } from 'rxjs';
 import { DataService } from 'src/app/services/data.service';
 
@@ -13,6 +13,7 @@ export class PelisPage implements OnInit {
   resultBus: Observable<Ipelis>;
   term: string = '';
   type: string = '';
+  id: string ='';
   constructor( private dataService: DataService ) { }
 
   ngOnInit() {
@@ -23,4 +24,9 @@ export class PelisPage implements OnInit {
     this.resultBus = this.dataService.buscarMovie(this.term, this.type);
   }
 
+  obtenerPelis(){
+    this.dataService.getDetails(this.id).subscribe( data => {
+      console.log(data);
+    });
+  }
 }

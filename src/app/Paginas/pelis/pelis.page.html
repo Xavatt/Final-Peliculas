@@ -18,7 +18,7 @@
 
 
   <ion-list>
-    <ion-item button *ngFor ="let peli of ( resultBus | async)" [routerLink] = "['/', 'peli', peli.imdbId]">
+    <ion-item button *ngFor ="let peli of ( resultBus | async)" [routerLink]="['/', 'peli', peli.imdbID]">
       <ion-avatar slot=start>
         <img src="{{peli.Poster}}" alt="{{peli.Title}}" *ngIf ="peli.Poster != 'N/A'">
 

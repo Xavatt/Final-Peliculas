@@ -31,8 +31,7 @@ export class DataService {
     return this.http.get<Ipelis>(this.url).pipe(map(results => results['Search']));
   }
 
-  getDetails(id: string)
-  {
+  getDetails(id: string) {
     return this.http.get<Ipelis>(`https://www.omdbapi.com/?i=${id}&plot=full&apikey=${this.apiKey}`);
   }
 

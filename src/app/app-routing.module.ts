@@ -22,11 +22,11 @@ const routes: Routes = [
   },
   {
     path: 'pelis',
-    loadChildren: () => import('./Paginas/busqueda/pelis/pelis.module').then( m => m.PelisPageModule)
+    loadChildren: () => import('./Paginas/pelis/pelis.module').then( m => m.PelisPageModule)
   },
   {
     path: 'peli/:id',
-    loadChildren: () => import('./Paginas/busqueda/peli-details/peli-details.module').then( m => m.PeliDetailsPageModule)
+    loadChildren: () => import('./Paginas/peli-details/peli-details.module').then( m => m.PeliDetailsPageModule)
   },
 ];
 
