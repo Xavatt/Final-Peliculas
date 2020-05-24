@@ -8,6 +8,11 @@
     "name": "Peliculas",
     "icon": "videocam-outline",
     "redirectTo": "/peliculas"
-}
+  },
+  {
+    "name": "Busqueda",
+    "icon": "pin",
+    "redirectTo": "/pelis"
+  }
 
 ]

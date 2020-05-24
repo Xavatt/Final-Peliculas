@@ -20,6 +20,14 @@ const routes: Routes = [
     path: 'peliculas',
     loadChildren: () => import('./Paginas/peliculas/peliculas.module').then( m => m.PeliculasPageModule)
   },
+  {
+    path: 'pelis',
+    loadChildren: () => import('./Paginas/busqueda/pelis/pelis.module').then( m => m.PelisPageModule)
+  },
+  {
+    path: 'peli/:id',
+    loadChildren: () => import('./Paginas/busqueda/peli-details/peli-details.module').then( m => m.PeliDetailsPageModule)
+  },
 ];
 
 @NgModule({
