@@ -4,63 +4,72 @@
         "type":"Drama",
         "classification": "Pelicula",
         "year":"1088",
-        "imagen":  "https://pics.filmaffinity.com/Cinema_Paradiso-502451618-large.jpg"      
+        "imagen":  "../assets/img/cinema.jpg",
+        "url":  "https://www.youtube.com/watch?v=jQq9J-gf-U0"     
     },
     {
         "name":"Gattaca", 
         "type":"Ciencia ficción/Drama",
         "classification": "Pelicula",
         "year":"1997",
-        "imagen":  "https://http2.mlstatic.com/dvd-gattaca-experimento-genetico-gattaca-1997-andrew-n-D_NQ_NP_513015-MLM25120137414_102016-F.jpg"      
+        "imagen":  "https://http2.mlstatic.com/dvd-gattaca-experimento-genetico-gattaca-1997-andrew-n-D_NQ_NP_513015-MLM25120137414_102016-F.jpg",
+        "url":  "https://www.youtube.com/watch?v=BpzVFdDeWyo"       
     },
     {
         "name":"Predestination", 
         "type":"Ciencia ficción/Suspenso",
         "classification": "Pelicula",
         "year":"2014", 
-        "imagen":   "https://unlibroparaestanoche.files.wordpress.com/2015/04/predestination-poster1.jpg"    
+        "imagen":   "https://unlibroparaestanoche.files.wordpress.com/2015/04/predestination-poster1.jpg",
+        "url": "https://www.youtube.com/watch?v=jcQacCfi_pw"     
     },
     {
         "name":"Iron Man 1", 
         "type":"Acción/Ciencia ficción",
         "classification": "Pelicula",
         "year":"2008", 
-        "imagen": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/b/bf/Iron_Man_1_Portada.png/revision/latest?cb=20191029194450&path-prefix=es"      
+        "imagen": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/b/bf/Iron_Man_1_Portada.png/revision/latest?cb=20191029194450&path-prefix=es",
+        "url": "https://www.youtube.com/watch?v=KAE5ymVLmZg"      
     },
     {
         "name":"Matrix", 
         "type":"Ciencia ficción/Acción",
         "classification": "Pelicula",
         "year":"1999", 
-        "imagen":  "https://pics.filmaffinity.com/Matrix-155050517-large.jpg"     
+        "imagen":  "../assets/img/matrix.jpg",
+        "url": "https://www.youtube.com/watch?v=m8e-FF8MsqU"     
     },
     {
         "name":"Falsa identidad", 
         "type":"Misterio/Suspenso",
         "classification": "Pelicula",
         "year":"2015", 
-        "imagen": "https://i.pinimg.com/originals/4f/ba/62/4fba62fc894c75a543ff36c83fcacb49.jpg"      
+        "imagen": "https://i.pinimg.com/originals/4f/ba/62/4fba62fc894c75a543ff36c83fcacb49.jpg",
+        "url": "https://www.youtube.com/watch?v=AFIyE57xSkI"       
     },
     {
         "name":"Pandorum", 
         "type":"Ciencia ficción/Terror",
         "classification": "Pelicula",
         "year":"2009",  
-        "imagen": "https://pics.filmaffinity.com/Pandorum-199014550-large.jpg"     
+        "imagen": "../assets/img/pan.jpg",
+        "url":  "https://www.youtube.com/watch?v=aLO5OACiXNg"    
     },
     {
         "name":"La isla", 
         "type":"Ciencia ficción/Acción",
         "classification": "Pelicula",
         "year":"2005",  
-        "imagen":  "https://r4.abcimg.es/resizer/resizer.php?imagen=https%3A%2F%2Fstatic2.abc.es%2Fmedia%2Fpeliculas%2F000%2F022%2F595%2Fla-isla-1.jpg&nuevoancho=690&medio=abc"    
+        "imagen":  "https://r4.abcimg.es/resizer/resizer.php?imagen=https%3A%2F%2Fstatic2.abc.es%2Fmedia%2Fpeliculas%2F000%2F022%2F595%2Fla-isla-1.jpg&nuevoancho=690&medio=abc",
+        "url": "https://www.youtube.com/watch?v=I2piOMj5-7Y"    
     },
     {
         "name":"La isla siniestra", 
         "type":"Suspenso/Misterio",
         "classification": "Pelicula",
         "year":"2010", 
-        "imagen":  "https://clarovideocdn5.clarovideo.net/PELICULAS/SHUTTERISLAND/EXPORTACION_WEB/SS/SHUTTERISLANDWHORIZONTAL.jpg?size=675x380"    
+        "imagen":  "https://i.pinimg.com/736x/4a/fa/de/4afade80330fdfd569831e664384688c.jpg",
+        "url": "https://www.youtube.com/watch?v=95z6iWCjEgc"    
     },
 
 
@@ -70,7 +79,8 @@
         "classification": "Serie",
         "year":"2004",
         "temp": "Temp: 8", 
-        "imagen":  "https://thetelevisionpilot.com/wp-content/uploads/2019/02/House-MD-800x406.png"     
+        "imagen":  "../assets/img/house.jpg",
+        "url": "https://www.youtube.com/watch?v=MczMB8nU1sY"      
     },
     {
         "name":"Mindhunter", 
@@ -78,7 +88,8 @@
         "classification": "Serie",
         "year":"2017",
         "temp": "Temp: 2", 
-        "imagen":  "data:image/jpeg;base64,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"     
+        "imagen":  "../assets/img/mid.jpg",
+        "url": "https://www.youtube.com/watch?v=Fz5au4VLZjo"     
     },
     {
         "name":"Malcolm in the middle", 
@@ -86,7 +97,8 @@
         "classification": "Serie",
         "year":"2000",
         "temp": "Temp: 7",  
-        "imagen":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdMoO4O8gWMwI60JZFcDpScrcN6n71EGr2b895c-g9RHKHuFX5&usqp=CAU"
+        "imagen":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdMoO4O8gWMwI60JZFcDpScrcN6n71EGr2b895c-g9RHKHuFX5&usqp=CAU",
+        "url": "https://www.youtube.com/watch?v=o6gPg-P5FPg"
     },
     {
         "name":"The Big Bang Theory", 
@@ -94,7 +106,8 @@
         "classification": "Serie",
         "year":"2007",
         "temp": "Temp: 12", 
-        "imagen": "https://www.dafont.com/forum/attach/orig/1/4/14098.jpg"      
+        "imagen": "../assets/img/giphy.gif",
+        "url": "https://www.youtube.com/watch?v=_uQXxvZ3afQ"      
     },
     {
         "name":"Lucifer", 
@@ -102,6 +115,7 @@
         "classification": "Serie",
         "year":"2016",
         "temp": "Temp: 4",
-        "imagen": "https://pulpfictioncine.com/download/multimedia.normal.86b6943bf7382b16.4c75636966657220546f6d20456c6c69735f6e6f726d616c2e77656270.webp"        
+        "imagen": "https://pulpfictioncine.com/download/multimedia.normal.86b6943bf7382b16.4c75636966657220546f6d20456c6c69735f6e6f726d616c2e77656270.webp",
+        "url": "https://www.youtube.com/watch?v=X4bF_quwNtw"         
     }
 ]

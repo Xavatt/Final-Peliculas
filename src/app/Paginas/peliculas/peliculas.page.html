@@ -1,0 +1,23 @@
+<app-header titulo="Peliculas!"></app-header>
+
+
+<ion-content>
+
+  <ion-slides mode="ios" pager="ios" scrollbar="ios" >
+    <ion-slide *ngFor="let p of pelis | async">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>{{p.year}}</ion-card-subtitle>
+          <ion-card-title>{{p.name}} </ion-card-title>
+          <img src="{{p.imagen}}" alt="">
+          <a href="{{p.url}}" style="font-size:20px;">Ver trailer</a>
+        </ion-card-header>
+        <ion-card-content>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+
+</ion-content>

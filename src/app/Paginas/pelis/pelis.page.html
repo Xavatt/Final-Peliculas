@@ -1,0 +1,38 @@
+<app-header titulo="Busqueda"></app-header>
+
+<ion-content>
+
+  <ion-searchbar [(ngModel)] = "term" (ionChange)="serchChanged($event)"></ion-searchbar>
+
+
+  <ion-item>
+    <ion-label>Select Search Type</ion-label>
+    <ion-select ([ngModel]) = "type" (ionChange) = "serchChanged($event)" >
+
+      <ion-select-option seleted= "true" value ="all">All</ion-select-option>
+      <ion-select-option  value ="movies">Movie</ion-select-option>
+      <ion-select-option  value ="series">Series</ion-select-option>
+      <ion-select-option  value ="episode">Episode</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-list>
+    <ion-item button *ngFor ="let peli of ( resultBus | async)" [routerLink]="['/', 'peli', peli.imdbID]">
+      <ion-avatar slot=start>
+        <img src="{{peli.Poster}}" alt="{{peli.Title}}" *ngIf ="peli.Poster != 'N/A'">
+
+      </ion-avatar>
+      <ion-label text-wrap>
+        <h3>{{peli.Title}}</h3>
+        {{peli.Year}}
+      </ion-label>
+
+      <ion-icon slot="end" *ngIf = "peli.Type === 'movie'" name="videocam"></ion-icon>
+      <ion-icon slot="end" *ngIf = "peli.Type === 'series'" name="tv"></ion-icon>
+      <ion-icon slot="end" *ngIf = "peli.Type === 'episode'" name="skull"></ion-icon>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>

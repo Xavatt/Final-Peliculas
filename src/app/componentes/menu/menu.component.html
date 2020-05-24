@@ -12,14 +12,15 @@
 
     <ion-list>
       
+      <ion-menu-toggle *ngFor="let m of componentes | async">
 
-        <ion-item    *ngFor="let m of componentes | async"
-                  [routerLink]="m.redirectTo">
-        <ion-icon [name]="m.icon"></ion-icon>
-        <ion-label>{{ m.name }}</ion-label>
-        
-        
+        <ion-item [routerLink]="m.redirectTo"> 
+          <ion-icon [name]="m.icon" slot="start"></ion-icon>
+          <ion-label>{{ m.name }}</ion-label>        
       </ion-item>      
+        
+        
+      </ion-menu-toggle>
 
     </ion-list>
 

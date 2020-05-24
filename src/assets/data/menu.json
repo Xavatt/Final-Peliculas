@@ -1,8 +1,18 @@
 [
   {
       "name": "Peliculas Y Series",
-      "icon": "alert-circle-outline",
+      "icon": "copy-outline",
       "redirectTo": "/peliculasyseries"
+  },
+  {
+    "name": "Peliculas",
+    "icon": "videocam-outline",
+    "redirectTo": "/peliculas"
+  },
+  {
+    "name": "Busqueda",
+    "icon": "pin",
+    "redirectTo": "/pelis"
   }
 
 ]
