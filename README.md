@@ -1,6 +1,6 @@
 # Proyecto Final de Moviles
 
-Miembros del equipo
+Team members
 
 -   Francisco Xavier Guinto Rios
 -   Ana Belgica Martinez Montoya
@@ -9,25 +9,25 @@ Miembros del equipo
 
 ## Objective
 
-El objetivo de este proyecto demostrar lo aprendido durante el semestre y crear una aplicacion movil funcional.
+The objective of this project is to demonstrate what has been learned during the semester and create a functional mobile application.
 
 ## Goals
 
--   [x] Crear una aplicacion movil respecto a peliculas
--   [x] Usar un API
--   [x] Hacer uso de varios componentes de Ionic
--   [x] Interfaz entendible para el usuario
+-   [x] Create a mobile application regarding movies
+-   [x] Use an API
+-   [x] Make use of various Ionic components and plugins
+-   [x] Understandable user interface
 
 
 
 # Development 
 
-Lo primero que hicimos fue reunirnos para discutir como se realizaria el proyecto, que interfaz usariamos, los recursos que ocupariamos y la division del trabajo.
+The first thing we did was meet to discuss how the project would be carried out, what interface we would use, the resources we would occupy and the division of labor.
 
-1. Creamos un nuevo proyecto usando el siguiente comando
+1. We create a new project using the following command
    
         - ionic start Final blank
-1.1 Procedimos a crear la mayoria de las paginas, servicios, componentes, etc.
+1.1 We proceeded to create most of the pages, services, components, etc.
 
     
         - ionic g pages Paginas/home --spec=false
@@ -37,13 +37,13 @@ Lo primero que hicimos fue reunirnos para discutir como se realizaria el proyect
         - ionic g pages Paginas/peliculas --spec=false
         - ionic g s services/data
 
-2. Tambien se hizo la creacion de algunos archivos json para controlar el menu y un pequeño almacenamiento para imprimir unas peliculas.
+2. The creation of some json files was made to control the menu and a small storage to print some movies.
    
 
-3. Se hizo uso de la pagina http://www.omdbapi.com/ para de ahi obtener el API usando en nuestro proyecto.
+3. We made use of the page http://www.omdbapi.com/ to get the API from there using our project.
    
 
-4. Se hizo uso de la pagina https://firebase.google.com/ para poder realizar nuestra seccion del login, dentro de esa pagina tenemos una base de datos en la cual es almacenada toda la informacion para permitir acceso a la aplicacion en la cual se almacena el correo y la contraseña del usuario.
+4. The page https://firebase.google.com/ was used to carry out our login section, within that page we have a database in which all the information is stored to allow access to the application in which the user's email and password are stored.
       
 
 ## How To Build Executable Of The Program
@@ -53,16 +53,16 @@ Lo primero que hicimos fue reunirnos para discutir como se realizaria el proyect
 
 **1. Install Angular and Ionic**
 
-Puedes ocupar los siguientes comandos para instalarlos:
+You can use the following commands to install them:
 
     - npm install -g @ionic/cli
     - npm install -g @angular/cli
 
-Debes tener en cuenta que para el correcto funcionamiento de estos codigos previamente requieres tener instalado Node.js
+You must bear in mind that for the correct operation of these codes you previously need to have Node.js installed
 
 **2. Install Firebase**
 
-Para que funcione de forma correcta la seccion del Login debes ingresar los siguientes codigos en la terminal.
+For the Login section to work correctly you must enter the following codes in the terminal.
 
     -  npm uninstall firebase @angular/fire 
     -  package.json
@@ -78,7 +78,8 @@ Para que funcione de forma correcta la seccion del Login debes ingresar los sigu
 
 ![image](https://user-images.githubusercontent.com/15019106/82767615-85c0be00-9dee-11ea-829f-0e239a4c43a8.png)
 
-Y por ultimo revisar que existan estas librerias en *app.module.ts*
+
+And finally check that these libraries exist in *app.module.ts*
 
     -   import { AngularFireAuthModule } from '@angular/fire/auth';
         imports: [AngularFireModule] from'@angular/fire';      
@@ -90,7 +91,7 @@ Y por ultimo revisar que existan estas librerias en *app.module.ts*
 
 **3. Install Plugins**
 
-Debido a que este proyecto usa algunas plugins obtenidos desde la pagina de Ionic para que no muestre ningun error al momento de iniciar el proyecto tienes que agregar los siguientes comandos.
+Because this project uses some plugins obtained from the Ionic page so that it does not show any errors when starting the project, you have to add the following commands.
 
         - ionic cordova plugin add cordova-plugin-x-socialsharing
         - npm install @ionic-native/social-sharing
@@ -108,7 +109,7 @@ Finally, **To compile** the server of the aplication the following command is re
 
 ![image](https://user-images.githubusercontent.com/15019106/82812977-c6095600-9e59-11ea-9fd0-a94d401a9071.png)
 
-Una vez corrido el codigo mostrara algo asi
+Once the code is run it will show something like this
 
 ![image](https://user-images.githubusercontent.com/15019106/82812806-67dc7300-9e59-11ea-9e76-a6e76e9c02bc.png)
 
