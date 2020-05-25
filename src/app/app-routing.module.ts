@@ -37,6 +37,10 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./Paginas/register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'fav',
+    loadChildren: () => import('./Paginas/fav/fav.module').then( m => m.FavPageModule)
   }
 ];
 

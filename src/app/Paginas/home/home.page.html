@@ -12,9 +12,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background-image" no-scroll padding>
 
-  <ion-button size="large" (click)="onLogout()">Logout</ion-button>
-  <ion-button size="large" routerLink="/admin">Admin</ion-button>
+  <ion-button expand="block" color="warning" (click)="onLogout()">Logout
+    <ion-icon name="lock-closed" slot="end"></ion-icon>
+  </ion-button>
+  <br>
 
 </ion-content>
+
+<style>
+  .background-image{
+    --background: url(../assets/fondo3.jpg) 0 0/100% 100% no-repeat;
+  }
+</style>
