@@ -92,8 +92,6 @@ Finally, **To compile** the server of the aplication the following command is re
 
     - Ionic serve
 
-**Here are a ScreenShoot to make it more visible.**
 
-![cap2](https://user-images.githubusercontent.com/15019106/45445000-ae426c00-b68e-11e8-8496-d33004077d70.PNG)
 
 **NOTE: Since the source code is in several files, the files MUST be in the same directory**
