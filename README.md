@@ -64,12 +64,19 @@ Debes tener en cuenta que para el correcto funcionamiento de estos codigos previ
 
 Para que funcione de forma correcta la seccion del Login debes ingresar los siguientes codigos en la terminal.
 
-    -  npm instal @angulat/firebase  --save 
-    -  ng add @angular/fire 
+    -  npm uninstall firebase @angular/fire 
+    -  package.json
+    -  dependencies {... "@angular/fire": "^5.4.2", "firebase": "7.14.1",...}
+    -  Save change
+    -  npm install firebase @angular/fire
+    
+**Here are a ScreenShoot to make it more visible.**
 
-Y hacer las siguientes modificaciones en el file *package.json* en la seccion 'dependencies'
+![image](https://user-images.githubusercontent.com/15019106/82767558-219dfa00-9dee-11ea-850f-f202911adc88.png)
 
-    - dependencies:["@angular/fire":"5.4.2","firebase": "5.4.2"]
+![image](https://user-images.githubusercontent.com/15019106/82767600-64f86880-9dee-11ea-88af-809937fd6637.png)
+
+![image](https://user-images.githubusercontent.com/15019106/82767615-85c0be00-9dee-11ea-829f-0e239a4c43a8.png)
 
 Y por ultimo revisar que existan estas librerias en *app.module.ts*
 
@@ -84,9 +91,5 @@ Y por ultimo revisar que existan estas librerias en *app.module.ts*
 Finally, **To compile** the server of the aplication the following command is required:
 
     - Ionic serve
-
-**Here are a ScreenShoot to make it more visible.**
-
-![cap2](https://user-images.githubusercontent.com/15019106/45445000-ae426c00-b68e-11e8-8496-d33004077d70.PNG)
 
 **NOTE: Since the source code is in several files, the files MUST be in the same directory**

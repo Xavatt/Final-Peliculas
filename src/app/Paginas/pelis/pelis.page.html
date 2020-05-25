@@ -4,7 +4,14 @@
 
   <ion-searchbar [(ngModel)] = "term" (ionChange)="serchChanged($event)"></ion-searchbar>
 
+  <ion-segment [(ngModel)]="type" (ionChange)="serchChanged($event)" color="danger">
+    <ion-segment-button *ngFor="let c of cat" [value]="c">
+      <ion-label>{{c}}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 
+
+<!-- 
   <ion-item>
     <ion-label>Select Search Type</ion-label>
     <ion-select ([ngModel]) = "type" (ionChange) = "serchChanged($event)" >
@@ -14,7 +21,7 @@
       <ion-select-option  value ="series">Series</ion-select-option>
       <ion-select-option  value ="episode">Episode</ion-select-option>
     </ion-select>
-  </ion-item>
+  </ion-item> -->
 
 
   <ion-list>

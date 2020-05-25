@@ -14,6 +14,7 @@ export class PelisPage implements OnInit {
   term: string = '';
   type: string = '';
   id: string ='';
+  cat=['movie','series','episode'];
   constructor( private dataService: DataService ) { }
 
   ngOnInit() {
