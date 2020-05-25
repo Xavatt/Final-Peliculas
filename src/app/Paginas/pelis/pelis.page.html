@@ -4,7 +4,14 @@
 
   <ion-searchbar [(ngModel)] = "term" (ionChange)="serchChanged($event)"></ion-searchbar>
 
+  <ion-segment [(ngModel)]="type" (ionChange)="serchChanged($event)" color="danger">
+    <ion-segment-button *ngFor="let c of cat" [value]="c">
+      <ion-label>{{c}}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 
+
+<!-- 
   <ion-item>
     <ion-label>Select Search Type</ion-label>
     <ion-select ([ngModel]) = "type" (ionChange) = "serchChanged($event)" >
@@ -14,11 +21,12 @@
       <ion-select-option  value ="series">Series</ion-select-option>
       <ion-select-option  value ="episode">Episode</ion-select-option>
     </ion-select>
-  </ion-item>
+  </ion-item> -->
 
 
-  <ion-list>
-    <ion-item button *ngFor ="let peli of ( resultBus | async)" [routerLink]="['/', 'peli', peli.imdbID]">
+  <ion-list #lista>
+    <ion-item-sliding *ngFor="let peli of (resultBus | async)">
+    <ion-item button [routerLink]="['/', 'peli', peli.imdbID]">
       <ion-avatar slot=start>
         <img src="{{peli.Poster}}" alt="{{peli.Title}}" *ngIf ="peli.Poster != 'N/A'">
 
@@ -31,8 +39,17 @@
       <ion-icon slot="end" *ngIf = "peli.Type === 'movie'" name="videocam"></ion-icon>
       <ion-icon slot="end" *ngIf = "peli.Type === 'series'" name="tv"></ion-icon>
       <ion-icon slot="end" *ngIf = "peli.Type === 'episode'" name="skull"></ion-icon>
-
     </ion-item>
+
+    <ion-item-options side="end">
+      <ion-item-option color="tertiary" (click)="favorite(peli)">
+        <ion-icon slot="icon-only" name="heart"></ion-icon>
+      </ion-item-option>
+      <ion-item-option color="danger" (click)="share(peli)">
+        <ion-icon slot="icon-only" name="share"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
   </ion-list>
 
 </ion-content>

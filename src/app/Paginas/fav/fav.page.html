@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Favoritos</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text = "Regresar" defaultHref ="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list #lista>
+    <ion-item-sliding  *ngFor="let a of datos" >
+    <ion-item button [routerLink]="['/', 'peli', a.imdbID]">
+      <ion-avatar slot="start">
+        <img src="{{a.Poster}}" alt="{{a.Title}}" *ngIf="a.Poster != 'N/A'">
+      </ion-avatar>
+      <ion-label text-wrap>
+        <h3>{{a.Title}}</h3>
+        {{a.Year}}
+      </ion-label>
+      <ion-icon slot="end" *ngIf="a.Type === 'movie'" name="videocam"></ion-icon>
+      <ion-icon slot="end" *ngIf="a.Type === 'series'" name="tv"></ion-icon>
+      <ion-icon slot="end" *ngIf="a.Type === 'episode'" name="tablet-portrait"></ion-icon>
+    </ion-item>   
+    <ion-item-options side="end">
+      <ion-item-option color="warning" (click)="delete(a)">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding> 
+  </ion-list>
+
+</ion-content>
