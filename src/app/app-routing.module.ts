@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   
@@ -10,7 +11,8 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./Paginas/home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./Paginas/home/home.module').then( m => m.HomePageModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'peliculasyseries',
@@ -28,6 +30,14 @@ const routes: Routes = [
     path: 'peli/:id',
     loadChildren: () => import('./Paginas/peli-details/peli-details.module').then( m => m.PeliDetailsPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./Paginas/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./Paginas/register/register.module').then( m => m.RegisterPageModule)
+  }
 ];
 
 @NgModule({
