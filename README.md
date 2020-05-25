@@ -72,10 +72,6 @@ Para que funcione de forma correcta la seccion del Login debes ingresar los sigu
     
 **Here are a ScreenShoot to make it more visible.**
 
-![image](https://user-images.githubusercontent.com/15019106/82767558-219dfa00-9dee-11ea-850f-f202911adc88.png)
-
-![image](https://user-images.githubusercontent.com/15019106/82767600-64f86880-9dee-11ea-88af-809937fd6637.png)
-
 ![image](https://user-images.githubusercontent.com/15019106/82767615-85c0be00-9dee-11ea-829f-0e239a4c43a8.png)
 
 Y por ultimo revisar que existan estas librerias en *app.module.ts*
@@ -104,13 +100,7 @@ Finally, **To compile** the server of the aplication the following command is re
 
     - ionic serve
 
-**Here are a ScreenShoot to make it more visible.**
 
-![image](https://user-images.githubusercontent.com/15019106/82812977-c6095600-9e59-11ea-9fd0-a94d401a9071.png)
-
-Una vez corrido el codigo mostrara algo así
-
-![image](https://user-images.githubusercontent.com/15019106/82812806-67dc7300-9e59-11ea-9e76-a6e76e9c02bc.png)
 
 
 **NOTE: Since the source code is in several files, the files MUST be in the same directory**
