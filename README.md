@@ -45,6 +45,12 @@ The first thing we did was meet to discuss how the project would be carried out,
 
 4. The page https://firebase.google.com/ was used to carry out our login section, within that page we have a database in which all the information is stored to allow access to the application in which the user's email and password are stored.
       
+    ![1](https://user-images.githubusercontent.com/15019106/82832556-092aef80-9e81-11ea-857a-27247970f196.jpeg)
+
+    ![2](https://user-images.githubusercontent.com/15019106/82832580-1a73fc00-9e81-11ea-9a12-31c6801153a4.jpeg)
+
+    ![3](https://user-images.githubusercontent.com/15019106/82832594-2790eb00-9e81-11ea-91f4-3a2125690c71.jpeg)
+
 
 ## How To Build Executable Of The Program
 
